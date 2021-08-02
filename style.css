@@ -1,0 +1,154 @@
+body {
+    font-family: monospace, serif;
+    border: solid;
+    
+}
+
+
+/*imagem do topo*/
+#banner {
+    width: 100%;
+    height: 497px;
+
+}
+
+/*menu de navegação*/
+nav {
+    display: flex;
+    flex-direction: initial;
+    color: rgb(248, 208, 000);
+    background-color: black;
+    justify-content: space-between;
+
+}
+
+nav > a {
+    width: 30%;
+    text-align: center;
+    border: solid;
+    border-radius: 18px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(248, 208, 000);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: monospace, serif;
+    justify-items: initial;
+    
+}
+
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 15px;
+    
+
+}
+
+
+nav ul li {
+    text-align: end;
+    width: 100%;
+}
+
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(248, 208, 000);
+
+}
+
+nav ul a:hover {
+    transform: scale(1.5);
+    color: azure;
+
+}
+
+#banner:hover {
+    transform: scale(0.9) ;
+    border-radius: 90px;
+    border: solid;
+
+}
+
+
+
+#galeriapet {
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    padding-top: 20px;
+    background-color: lightblue; 
+    justify-content: space-between;
+}
+    
+
+#galeriapet img {
+    width: 30%;
+    height: 459px;
+    border-radius: 300px;
+    border: solid;
+    cursor: pointer;
+    margin: 15px;
+}
+
+
+#galeriapet img:hover {
+    transform: scale(1.2);
+    border-radius: 0px
+} 
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: rgb(248, 208, 000);
+}
+
+footer a {
+    text-decoration: none;
+    color:blue;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #banner {
+        display: none;
+
+    }
+
+    #galeriapet img {
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    }
+
+
+
+}
