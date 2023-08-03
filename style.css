@@ -110,35 +110,42 @@ nav ul a:hover {
 
 /*Galeria pet CSS start*/
 
-.galeriapet .box-container{
+.galeriapet .box-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Alinhar o conteúdo no topo */
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 0;
 }
 
-.galeriapet .box-container img{
-    max-width: 180px;
+.galeriapet .box-container .box {
+    position: relative;
+    width: 360px; /* Largura máxima de 360px */
+    margin: 1rem;
+    border: solid 1px;
+    box-sizing: border-box; /* Inclui borda no cálculo do tamanho */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.galeriapet .box-container img {
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
     border-bottom: solid 2px;
 }
 
-.galeriapet .box-container .box{
-    position: relative;
-    margin: 4rem 1rem;
-    border: solid 1px;
-}
-
-.galeriapet .box-container .box span{
+.galeriapet .box-container .box span {
     font-size: 1.3rem;
-    padding: 7px 7px;
-    
+    padding: 7px;
+    display: block; /* Garante que o span ocupe toda a largura */
+    overflow: hidden; /* Evita que o texto ultrapasse */
+    text-overflow: ellipsis; /* Adiciona reticências em caso de texto longo */
+    white-space: nowrap; /* Impede a quebra de linha no texto */
 }
 
-
-.galeriapet .box-container .box h3{
+.galeriapet .box-container .box h3 {
     font-size: 1.5rem;
     color: black;
+    margin-top: 0.5rem; /* Margem superior para separar o título */
 }
 
 
