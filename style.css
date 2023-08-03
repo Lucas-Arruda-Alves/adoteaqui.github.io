@@ -126,7 +126,7 @@ nav ul a:hover {
 .galeriapet .box-container .box{
     position: relative;
     margin: 4rem 1rem;
-    border: solid 2px;
+    border: solid 1px;
 }
 
 .galeriapet .box-container .box span{
